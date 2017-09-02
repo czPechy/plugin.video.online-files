@@ -35,7 +35,7 @@ class HellspyContentProvider(ContentProvider):
         return ['login','search','resolve','categories']
 
     def search(self,keyword):
-        return self.list('search/?usrq='+urllib.quote(keyword))
+        return self.list('search/?adultControl-state=1&do=adultControl-confirmed&usrq='+urllib.quote(keyword))
 
     def login(self):
         if self.username and self.password and len(self.username)>0 and len(self.password)>0:
