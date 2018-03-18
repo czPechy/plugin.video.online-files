@@ -20,7 +20,7 @@
 # *
 # */
 import re,urllib,urllib2,cookielib,random,util,sys,os,traceback
-import simplejson as json, xbmcaddon
+import json, xbmcaddon
 from base64 import b64decode
 from provider import ContentProvider
 
